@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <style>
+        body{
+            background-color: rgb(145, 143, 142);
+        }
+        button{
+            background-color: blue;
+            color: white;
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
+            margin: 50%;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="
+     var idade = window.prompt(`Qual e a sua idade?`)
+    if (idade >= 18) {
+      window.alert(`Maior de idade`)  
+    } else {
+       window.alert(`Menor de idade`)
+    }">Verificador de idade</button>
+</body>
+</html>

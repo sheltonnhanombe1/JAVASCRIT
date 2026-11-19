@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de subtracao</title>
+    <style>
+        body{
+            background-color: brown;
+        }
+        h1{
+            text-align: center;
+        }
+        button{
+            background-color: blueviolet;
+            color: white;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            width: 200px;
+            border-radius: 30px;
+            height: 40px;
+        }
+        p{
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Calculadora de subtracao</h1>
+    <p id="numero1">Primeiro numero:--</p>
+    <p id="numero2">Segundo numero:--</p>
+    <p id="soma3">Rsultado:--</p>
+    
+    <button onclick="comecar()">comecar operacao</button>
+    <button onclick="subtracao()">subtrair</button>
+
+    <script>
+        var a, b, soma
+        function comecar(){
+            a = Number(window.prompt(`Digite um numero:`))
+            var b = Number(window.prompt(`Digite outro numero:`))
+            soma = a - b
+
+            document.getElementById(`numero1`).textContent = `Primeiro valor: ${a}`
+            document.getElementById(`numero2`).textContent = `Segundo valor: ${b}`
+        }
+        function subtracao(){
+            window.alert(`A subtracao da igual a: ${soma}`)
+            document.getElementById(`soma3`).textContent = `Resultado: ${soma}`
+        }
+    </script>
+</body>
+</html>

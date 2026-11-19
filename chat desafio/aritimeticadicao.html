@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operacoes de adicao</title>
+</head>
+<style>
+    body{
+        background-color: brown;
+        color: white;
+    }
+    button{
+        width: 100px;
+        height: 100px;
+        
+        padding:2px;
+        margin: 10px;
+    }
+</style>
+<body>
+    <h1>Operacoes de adicao</h1>
+    <p id="numero1">Primeiro numero: --</p>
+    <p id="numero2">Segundo numero:--</p>
+    <p id="soma3">Resultado: --</p>
+    <button onclick="comecar()">Comecar a operacao</button>
+    <button onclick="somar()">Somar</button>
+     <script>
+        var a, b, soma
+        function comecar(){
+            a = Number(window.prompt(`Digite um numero:`))
+            b = Number(window.prompt(`Digite outro numero:`))
+            soma = a + b
+            document.getElementById(`numero1`).textContent= `Primeiro Numero: ${a}`
+            document.getElementById(`numero2`).textContent= `Segundo numero: ${b}`
+        } 
+        
+    
+        function somar(){
+            
+            window.alert(`A soma entre ${a} e ${b} e igual a ${soma}`)
+            document.getElementById(`soma3`).textContent= `Resultado: ${soma}`
+        }
+        
+     </script>
+        
+
+    
+</body>
+</html>

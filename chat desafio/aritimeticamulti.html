@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operacao de multiplicacao</title>
+</head>
+<body>
+    <h1>Operacao de multiplicacao</h1>
+    <p id="numero1">Primeiro numero:</p>
+    <p id="numero2">Segundo numero:</p>
+    <p id="somar3">Resultado</p>
+<button onclick="Comecar()">comecar operacao</button>
+<button onclick="Multiplicar()">Multiplicar</button>
+<script>
+    var a, b, soma
+function Comecar(){
+    a = Number(window.prompt(`Digite um numero:`))
+    b = Number(window.prompt(`Digita outro numero:`))
+    soma = a * b
+    document.getElementById(`numero1`).textContent = `Primeiro numero: ${a}`
+    document.getElementById(`numero2`).textContent = `Segundo numro: ${b}`
+}
+function Multiplicar(){
+    window.alert(`A subtracao entre ${a} e ${b} e igual a ${soma}`)
+    document.getElementById(`somar3`).textContent = `Resultado: ${soma}`
+}
+</script>
+</body>
+</html>

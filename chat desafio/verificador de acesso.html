@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificadorde acesso</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        button{
+            background-color: rgb(8, 129, 16);
+            color: white;
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
+            margin: 50%;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="
+        var acesso = Number(window.prompt(`Qual e a sua idade?`))
+        if (acesso >= 18) {
+          window.alert(`Acesso autorizado`)  
+        } else {
+            window.alert(`Acesso nao autorizado`)
+        }
+        ">Verificador de acesso</button>
+</body>
+</html>
